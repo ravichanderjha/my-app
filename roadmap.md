@@ -4,8 +4,7 @@ Perfect! Based on your goal (learn RN logic → later build Ola/Uber), here’s 
 
 ### **Phase 1 – Basics**
 
-1. Environment setup (Expo CLI / React Native CLI)
-2. JSX & Components (Functional & Class)
+2. Intro
 3. Props & State (`useState`)
 4. useEffect (lifecycle & API calls)
 5. Lists & FlatList

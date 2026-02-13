@@ -1,11 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
 import { Text, View } from 'react-native';
+import Child from './Child';
 
 export default function App() {
+
+  const nameIs = "prakash jha";
+  const ageIs = 28;
+  const myBooks = [
+    { name: "book1", price: 100 },
+    { name: "book2", price: 200 },
+    { name: "book3", price: 300 }
+  ];
+  
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text style={{ fontSize: 24, fontWeight: 'bold' }}>Prakash Jha</Text>
-      <StatusBar style="auto" />
+    <View>
+      <Text>App component</Text>
+      <Child name={nameIs} age={ageIs} myBooks={myBooks} />
     </View>
   );
 }
