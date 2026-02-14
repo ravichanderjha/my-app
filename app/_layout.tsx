@@ -1,20 +1,15 @@
-import { Text, View } from 'react-native';
-import Child from './Child';
+import { useState } from 'react';
+import { Button, Text, View } from 'react-native';
+
 
 export default function App() {
 
-  const nameIs = "prakash jha";
-  const ageIs = 28;
-  const myBooks = [
-    { name: "book1", price: 100 },
-    { name: "book2", price: 200 },
-    { name: "book3", price: 300 }
-  ];
-  
+  const [count, setCount] = useState(0);
+
   return (
     <View>
-      <Text>App component</Text>
-      <Child name={nameIs} age={ageIs} myBooks={myBooks} />
+      <Text>Count: {count}</Text>
+      <Button title="Increment" onPress={() => setCount(prev=>prev+1)} />
     </View>
   );
 }
